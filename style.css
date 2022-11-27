@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 8px 32px;
+    padding: 16px 200px;
 }
 
 .logo {
@@ -36,15 +36,19 @@ a {
 .content {
     display: flex;
     flex-direction: column;
+    padding: 32px 0px;
 }
 
 .main-box {
     display: flex;
+    padding: 32px 200px;
+    gap: 32px;
+    justify-content: space-between;
 }
 
-/* .mainstuff {
-
-} */
+.mainstuff {
+    max-width: 350px;
+} 
 
 .herotext {
     font-size: 48px;
@@ -55,6 +59,12 @@ a {
 .maintext {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.mainimage {
+    max-height: 250px;
+    max-width: auto;
+    border-radius: 12px;
 }
 
 .info-box {
@@ -74,22 +84,34 @@ a {
 
 .imageboxes {
     display: flex;
+    gap: 16px;
 }
 
 .text {
     font-size: 18px;
     color: #1F2937;
+    max-width: 128px;
 }
 
-/* .first-image, .second-image, .third-image, .fourth-image {
+.swordimage {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
 
-} */
+.swordimage img {
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 12px;
+}
 
 .quote-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #E5E7EB;
+    padding: 64px 200px;
 }
 
 .quote {
@@ -102,21 +124,55 @@ a {
 .signature {
     font-size: 28px;
     font-weight: 700;
-    color: #1F2937
+    color: #1F2937;
+
 }
 
 .lower-box {
     display: flex;
     justify-content: center;
     background-color: white;
+    padding: 64px 200px;
 }
 
 .actionbox {
     display: flex;
-    background-color: #3882F6
+    background-color: #3882F6;
+    border-radius: 6px;
+    padding: 32px 128px;
+    gap: 64px;
+}
+
+.actiontitle {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.actiontext {
+    font-size: 16px;
 }
 
 button {
     background-color: #3882F6;
     color: white;
+    border-radius: 6px;
+    border-style: none;
+    padding: 8px 16px;
+    max-width: 96px;
+    max-height: 48px;
+}
+
+.signup {
+    border-style: solid;
+    border-color: white;
+}
+
+footer {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.copyright {
+    padding-bottom: 32px;
 }
